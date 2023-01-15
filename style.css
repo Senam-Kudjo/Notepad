@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px red solid;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+#todoContainer {
+    padding: 20px 10px;
+    width: 300px;
+    background-color: aqua;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 5px;
+    flex: 5;
+    margin-right: 10px;
+    border: 0;
+    box-shadow: 2px 1px 1px silver;
+    font-size: 1.2rem;
+}
+
+#addTask {
+    font-size: 25px;
+    flex: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: green;
+    border: 1px green solid;
+}
+
+#addTask:hover {
+    background-color: green;
+    color: white;
+}
+
+#todoOutput {
+    height: auto;
+    border-radius: 5px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+.task li {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    flex: 4;
+    margin: 10px;
+}
+
+.task button {
+    flex: 1;
+    cursor: pointer;
+}
+
+.task .check {
+    border-radius: 5px;
+    border: 0.5px solid blue;
+    color: blue;
+    background-color: white;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    padding: 5px;
+
+}
+
+.task .check:hover {
+    color: white;
+    background-color: blue;
+}
+
+.task .delete {
+    border-radius: 5px;
+    background-color: white;
+    color: red;
+    border: 0.5px red solid;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.task .delete:hover {
+    background-color: red;
+    color: white;
+    border: 0.5px red solid;
+}
